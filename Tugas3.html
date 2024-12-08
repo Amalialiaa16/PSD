@@ -1,0 +1,1372 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Markdown Files &#8212; My sample book</title>
+    <link rel="stylesheet" href="styles.css">
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'markdown';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Content with notebooks" href="notebooks.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+<li class="toctree-l1"><a class="reference internal" href="Tugas1.html">Tugas 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas2.html">Tugas 2</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="Tugas3.html">Tugas 3</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmarkdown.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/markdown.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Markdown Files</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="markdown-files">
+<h1>PREDIKSI HARGA ALPUKAT UNTUK MENINGKATKAN KEPUTUSAN PEMASARAN DI PASAR ALPUKAT AMERIKA SERIKAT</h1>
+
+<h2 id="Pendahuluan">Pendahuluan</h2>
+<h3 id="Latar Belakang">Latar Belakang</h3>
+<p>Dalam era digital dan berbasis data, transparansi informasi harga menjadi sangat penting dalam sektor pangan, termasuk produk seperti avocado. Avocado merupakan komoditas yang permintaannya terus meningkat, baik di pasar lokal maupun internasional, namun variasi harga sering kali membingungkan produsen, pedagang, dan konsumen. Faktor seperti volume penjualan, jenis kemasan (seperti Small, Large, dan XLarge Bags), dan region dapat memengaruhi fluktuasi harga rata-rata avocado di pasar.
+
+Kurangnya informasi yang akurat mengenai prediksi harga menyebabkan ketidakpastian dalam transaksi jual-beli, baik di tingkat petani maupun konsumen. Untuk mengatasi hal ini, diperlukan suatu sistem berbasis data historis yang mampu memberikan prediksi harga yang lebih objektif dan transparan. Kita dapat membangun model prediksi yang mengidentifikasi faktor-faktor signifikan yang memengaruhi harga avocado.
+
+Penelitian ini bertujuan untuk membangun model prediksi harga avocado dengan menggunakan data historis penjualan. Melalui pendekatan ini, diharapkan model dapat membantu petani dalam menentukan strategi produksi, pedagang dalam merencanakan penjualan, serta konsumen dalam memahami kisaran harga yang wajar. Prediksi yang lebih transparan dan akurat juga dapat mendorong efisiensi pasar.</p>
+
+<h3 id="Rumusan Masalah">Rumusan Masalah</h3>
+<ul>
+  <li>Apa saja faktor-faktor utama yang memengaruhi harga rata-rata avocado?</li>
+  <li>Bagaimana cara membangun model yang tepat untuk memprediksi harga avocado berdasarkan data historis penjualan?</li>
+  <li>Seberapa akurat model yang dibangun dalam memprediksi harga avocado?</li>
+</ul>
+
+<h3 id="Tujuan">Tujuan</h3>
+<ul>
+  <li>Menganalisis dataset avocado untuk mengidentifikasi fitur-fitur yang memengaruhi harga, seperti volume penjualan, jenis kemasan, dan lokasi.</li>
+  <li>Membangun model prediksi harga avocado menggunakan metode Decision Tree.</li>
+  <li>Mengevaluasi kinerja model prediksi untuk memastikan akurasi dan keandalannya.</li>
+</ul>
+
+<h2 id="Data Understanding">Data Understanding</h2>
+<p>pada kali ini saya melakukan prediksi harga alpukat di amerika pada rentang tahun 2015-2018. Dataset yang saya gunakan ini berasal dari kaggle berikut ini linknya:
+  <a href="https://www.kaggle.com/datasets/neuromusic/avocado-prices " target="_blank">Harga Alpukat</a>.pada dataset ini memiliki beberapa fitur yakni:
+  <ul>
+    <li>Date: Tanggal penjualan avocado.</li>
+    <li>AveragePrice: Harga rata-rata penjualan avocado (ini bisa menjadi target prediksi).</li>
+    <li>Total Volume: Total volume avocado yang terjual.</li>
+    <li>4046: Jumlah avocado jenis PLU 4046 yang terjual.</li>
+    <li>4225: Jumlah avocado jenis PLU 4225 yang terjual.</li>
+    <li>4770: Jumlah avocado jenis PLU 4770 yang terjual.</li>
+    <li>Total Bags: Total jumlah avocado dalam kemasan bag yang terjual.</li>
+    <li>Small Bags: Jumlah avocado dalam kemasan Small Bags.</li>
+    <li>Large Bags: Jumlah avocado dalam kemasan Large Bags.</li>
+    <li>XLarge Bags: Jumlah avocado dalam kemasan XLarge Bags.</li>
+    <li>type: Tipe avocado (conventional atau organic).</li>
+    <li>year: Tahun penjualan avocado.</li>
+    <li>region: Lokasi atau wilayah penjualan avocado.</li>
+  </ul>
+</p>
+
+<h3 id="Import Library">Import Library</h3>
+<div class="code-box">
+  <pre><code>
+    # Import library yang dibutuhkan
+    import numpy as np
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    from sklearn.model_selection import train_test_split
+    from sklearn.tree import DecisionTreeRegressor
+    from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+    import warnings
+    warnings.filterwarnings('ignore')
+  </code></pre>
+</div>
+
+<div class="code-box">
+  <pre><code>
+    df = pd.read_csv('avocado.csv')
+    df.head()
+  </code></pre>
+</div>
+
+<p><b>Output:</b></p>
+<div class="code-box">
+  <pre><code>
+    <table border="1">
+      <tr>
+        <th>Unnamed: 0</th>
+        <th>Date</th>
+        <th>AveragePrice</th>
+        <th>Total Volume</th>
+        <th>4046</th>
+        <th>4225</th>
+        <th>4770</th>
+        <th>Total Bags</th>
+        <th>Small Bags</th>
+        <th>Large Bags</th>
+        <th>XLarge Bags</th>
+        <th>type</th>
+        <th>year</th>
+        <th>region</th>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>2015-12-27</td>
+        <td>1.33</td>
+        <td>64236.62</td>
+        <td>1036.74</td>
+        <td>54454.85</td>
+        <td>48.16</td>
+        <td>8696.87</td>
+        <td>8603.62</td>
+        <td>93.25</td>
+        <td>0.0</td>
+        <td>conventional</td>
+        <td>2015</td>
+        <td>Albany</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2015-12-20</td>
+        <td>1.35</td>
+        <td>54876.98</td>
+        <td>674.28</td>
+        <td>44638.81</td>
+        <td>58.33</td>
+        <td>9505.56</td>
+        <td>9408.07</td>
+        <td>97.49</td>
+        <td>0.0</td>
+        <td>conventional</td>
+        <td>2015</td>
+        <td>Albany</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>2015-12-13</td>
+        <td>0.93</td>
+        <td>118220.22</td>
+        <td>794.70</td>
+        <td>109149.67</td>
+        <td>130.50</td>
+        <td>8145.35</td>
+        <td>8042.21</td>
+        <td>103.14</td>
+        <td>0.0</td>
+        <td>conventional</td>
+        <td>2015</td>
+        <td>Albany</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>2015-12-06</td>
+        <td>1.08</td>
+        <td>78992.15</td>
+        <td>1132.00</td>
+        <td>71976.41</td>
+        <td>72.58</td>
+        <td>5811.16</td>
+        <td>5677.40</td>
+        <td>133.76</td>
+        <td>0.0</td>
+        <td>conventional</td>
+        <td>2015</td>
+        <td>Albany</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>2015-11-29</td>
+        <td>1.28</td>
+        <td>51039.60</td>
+        <td>941.48</td>
+        <td>43838.39</td>
+        <td>75.78</td>
+        <td>6183.95</td>
+        <td>5986.26</td>
+        <td>197.69</td>
+        <td>0.0</td>
+        <td>conventional</td>
+        <td>2015</td>
+        <td>Albany</td>
+      </tr>
+    </table>
+
+  </code></pre>
+</div>
+
+<h3 id="Menentukan Missing Value">Menentukan Missing Value</h3>
+<div class="code-box">
+  <pre><code>
+    df = pd.read_csv('avocado.csv')
+    df.isnull().sum()
+  </code></pre>
+</div>
+<p><b>Output:</b></p>
+<div class="code-box">
+  <pre><code>
+    <table border="1">
+      <tr>
+        <th>Unnamed: 0</th>
+        <th>Date</th>
+        <th>AveragePrice</th>
+        <th>Total Volume</th>
+        <th>4046</th>
+        <th>4225</th>
+        <th>4770</th>
+        <th>Total Bags</th>
+        <th>Small Bags</th>
+        <th>Large Bags</th>
+        <th>XLarge Bags</th>
+        <th>type</th>
+        <th>year</th>
+        <th>region</th>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+    </table>
+  </code></pre>
+</div>
+<p><b>Kesimpulan:</b>dapat dilihat bahwa tidak ada missing value dalam dataset diatas sehingga tidak dibutuhkan penanganan lanjutan untuk penanganan missing value.</p>
+
+<div class="code-box">
+  <pre><code>
+    df.info()
+    print("Shape of data:")
+    print(df.shape)
+  </code></pre>
+</div>
+<p><b>Output:</b></p>
+<div class="code-box">
+  <pre><code>
+    <class 'pandas.core.frame.DataFrame'>
+      RangeIndex: 18249 entries, 0 to 18248
+      Data columns (total 14 columns):
+      #   Column        Non-Null Count  Dtype  
+      ---  ------        --------------  -----  
+      0   Unnamed: 0    18249 non-null  int64  
+      1   Date          18249 non-null  object 
+      2   AveragePrice  18249 non-null  float64
+      3   Total Volume  18249 non-null  float64
+      4   4046          18249 non-null  float64
+      5   4225          18249 non-null  float64
+      6   4770          18249 non-null  float64
+      7   Total Bags    18249 non-null  float64
+      8   Small Bags    18249 non-null  float64
+      9   Large Bags    18249 non-null  float64
+      10  XLarge Bags   18249 non-null  float64
+      11  type          18249 non-null  object 
+      12  year          18249 non-null  int64  
+      13  region        18249 non-null  object 
+      dtypes: float64(9), int64(2), object(3)
+      memory usage: 1.9+ MB
+      Shape of data:
+      (18249, 14)
+  </code></pre>
+</div>
+<div class="code-box">
+  <pre><code>
+    print("Jumlah data duplicated:", df.duplicated().sum(), end="")
+    df.isna().sum()
+  </code></pre>
+</div>
+<div class="code-box">
+  <pre><code>
+    <table border="1">
+      <tr>
+        <th>Unnamed: 0</th>
+        <th>Date</th>
+        <th>AveragePrice</th>
+        <th>Total Volume</th>
+        <th>4046</th>
+        <th>4225</th>
+        <th>4770</th>
+        <th>Total Bags</th>
+        <th>Small Bags</th>
+        <th>Large Bags</th>
+        <th>XLarge Bags</th>
+        <th>type</th>
+        <th>year</th>
+        <th>region</th>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+    </table>
+  </code></pre>
+</div>
+
+<div class="code-box">
+  <pre><code>
+    q1 = df['AveragePrice'].quantile(0.25)
+    median = df['AveragePrice'].median()
+    q3 = df['AveragePrice'].quantile(0.75)
+
+    def classification_harga(AveragePrice):
+        if AveragePrice <= q1:
+            return 'Murah'
+        elif AveragePrice <= median:
+            return 'Menengah'
+        else:
+            return 'Mahal'
+
+    # Menambahkan kolom baru 'Klasifikasi Harga'
+    df['tingkat_harga'] = df['AveragePrice'].apply(classification_harga)
+
+    # Menampilkan DataFrame dengan kolom baru
+    df.head()
+  </code></pre>
+</div>
+<p><b>Output:</b></p>
+<div class="code-box">
+  <pre><code>
+    <table border="1">
+      <tr>
+        <th>Unnamed: 0</th>
+        <th>Date</th>
+        <th>AveragePrice</th>
+        <th>Total Volume</th>
+        <th>4046</th>
+        <th>4225</th>
+        <th>4770</th>
+        <th>Total Bags</th>
+        <th>Small Bags</th>
+        <th>Large Bags</th>
+        <th>XLarge Bags</th>
+        <th>type</th>
+        <th>year</th>
+        <th>region</th>
+        <th>tingkat_harga</th>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>2015-12-27</td>
+        <td>1.33</td>
+        <td>64236.62</td>
+        <td>1036.74</td>
+        <td>54454.85</td>
+        <td>48.16</td>
+        <td>8696.87</td>
+        <td>8603.62</td>
+        <td>93.25</td>
+        <td>0.0</td>
+        <td>conventional</td>
+        <td>2015</td>
+        <td>Albany</td>
+        <td>Menengah</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2015-12-20</td>
+        <td>1.35</td>
+        <td>54876.98</td>
+        <td>674.28</td>
+        <td>44638.81</td>
+        <td>58.33</td>
+        <td>9505.56</td>
+        <td>9408.07</td>
+        <td>97.49</td>
+        <td>0.0</td>
+        <td>conventional</td>
+        <td>2015</td>
+        <td>Albany</td>
+        <td>Menengah</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>2015-12-13</td>
+        <td>0.93</td>
+        <td>118220.22</td>
+        <td>794.70</td>
+        <td>109149.67</td>
+        <td>130.50</td>
+        <td>8145.35</td>
+        <td>8042.21</td>
+        <td>103.14</td>
+        <td>0.0</td>
+        <td>conventional</td>
+        <td>2015</td>
+        <td>Albany</td>
+        <td>Murah</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>2015-12-06</td>
+        <td>1.08</td>
+        <td>78992.15</td>
+        <td>1132.00</td>
+        <td>71976.41</td>
+        <td>72.58</td>
+        <td>5811.16</td>
+        <td>5677.40</td>
+        <td>133.76</td>
+        <td>0.0</td>
+        <td>conventional</td>
+        <td>2015</td>
+        <td>Albany</td>
+        <td>Murah</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>2015-11-29</td>
+        <td>1.28</td>
+        <td>51039.60</td>
+        <td>941.48</td>
+        <td>43838.39</td>
+        <td>75.78</td>
+        <td>6183.95</td>
+        <td>5986.26</td>
+        <td>197.69</td>
+        <td>0.0</td>
+        <td>conventional</td>
+        <td>2015</td>
+        <td>Albany</td>
+        <td>Menengah</td>
+      </tr>
+    </table>
+  </code></pre>
+</div>
+<div class="code-box">
+  <pre><code>
+    df.describe()
+  </code></pre>
+</div>
+<p><b>Output:</b></p>
+<div class="code-box">
+  <pre><code>
+    <table border="1">
+      <tr>
+        <th>Statistic</th>
+        <th>Unnamed: 0</th>
+        <th>AveragePrice</th>
+        <th>Total Volume</th>
+        <th>4046</th>
+        <th>4225</th>
+        <th>4770</th>
+        <th>Total Bags</th>
+        <th>Small Bags</th>
+        <th>Large Bags</th>
+        <th>XLarge Bags</th>
+        <th>year</th>
+      </tr>
+      <tr>
+        <td>count</td>
+        <td>18249.000000</td>
+        <td>18249.000000</td>
+        <td>1.824900e+04</td>
+        <td>1.824900e+04</td>
+        <td>1.824900e+04</td>
+        <td>1.824900e+04</td>
+        <td>1.824900e+04</td>
+        <td>1.824900e+04</td>
+        <td>1.824900e+04</td>
+        <td>18249.000000</td>
+        <td>18249.000000</td>
+      </tr>
+      <tr>
+        <td>mean</td>
+        <td>24.232232</td>
+        <td>1.405978</td>
+        <td>8.506440e+05</td>
+        <td>2.930084e+05</td>
+        <td>2.951546e+05</td>
+        <td>2.283974e+04</td>
+        <td>2.396392e+05</td>
+        <td>1.821947e+05</td>
+        <td>5.433809e+04</td>
+        <td>3106.426507</td>
+        <td>2016.147899</td>
+      </tr>
+      <tr>
+        <td>std</td>
+        <td>15.481045</td>
+        <td>0.402677</td>
+        <td>3.453545e+06</td>
+        <td>1.264989e+06</td>
+        <td>1.204120e+06</td>
+        <td>1.074641e+05</td>
+        <td>9.862424e+05</td>
+        <td>7.461785e+05</td>
+        <td>2.439660e+05</td>
+        <td>17692.894652</td>
+        <td>0.939938</td>
+      </tr>
+      <tr>
+        <td>min</td>
+        <td>0.000000</td>
+        <td>0.440000</td>
+        <td>8.456000e+01</td>
+        <td>0.000000e+00</td>
+        <td>0.000000e+00</td>
+        <td>0.000000e+00</td>
+        <td>0.000000e+00</td>
+        <td>0.000000e+00</td>
+        <td>0.000000e+00</td>
+        <td>0.000000</td>
+        <td>2015.000000</td>
+      </tr>
+      <tr>
+        <td>25%</td>
+        <td>10.000000</td>
+        <td>1.100000</td>
+        <td>1.083858e+04</td>
+        <td>8.540700e+02</td>
+        <td>3.008780e+03</td>
+        <td>0.000000e+00</td>
+        <td>5.088640e+03</td>
+        <td>2.849420e+03</td>
+        <td>1.274700e+02</td>
+        <td>0.000000</td>
+        <td>2015.000000</td>
+      </tr>
+      <tr>
+        <td>50%</td>
+        <td>24.000000</td>
+        <td>1.370000</td>
+        <td>1.073768e+05</td>
+        <td>8.645300e+03</td>
+        <td>2.906102e+04</td>
+        <td>1.849900e+02</td>
+        <td>3.974383e+04</td>
+        <td>2.636282e+04</td>
+        <td>2.647710e+03</td>
+        <td>0.000000</td>
+        <td>2016.000000</td>
+      </tr>
+      <tr>
+        <td>75%</td>
+        <td>38.000000</td>
+        <td>1.660000</td>
+        <td>4.329623e+05</td>
+        <td>1.110202e+05</td>
+        <td>1.502069e+05</td>
+        <td>6.243420e+03</td>
+        <td>1.107834e+05</td>
+        <td>8.333767e+04</td>
+        <td>2.202925e+04</td>
+        <td>132.500000</td>
+        <td>2017.000000</td>
+      </tr>
+      <tr>
+        <td>max</td>
+        <td>52.000000</td>
+        <td>3.250000</td>
+        <td>6.250565e+07</td>
+        <td>2.274362e+07</td>
+        <td>2.047057e+07</td>
+        <td>2.546439e+06</td>
+        <td>1.937313e+07</td>
+        <td>1.338459e+07</td>
+        <td>5.719097e+06</td>
+        <td>551693.650000</td>
+        <td>2018.000000</td>
+      </tr>
+    </table>
+
+  </code></pre>
+</div>
+
+<h2 id="Explorasi Data Analysis">Explorasi Data Analysis</h2>
+<div class="code-box">
+  <pre><code>
+    # Menampilkan distribusi kolom numerik
+    kolom_numerik = ['AveragePrice', 'Total Volume', '4046', '4225', '4770', 'Total Bags']
+
+    plt.figure(figsize=(15, 8))
+    for i, kolom in enumerate(kolom_numerik):
+        plt.subplot(2, 3, i+1)
+        sns.histplot(df[kolom], kde=True, color='skyblue')
+        plt.title(f'Distribusi {kolom}')
+
+    plt.tight_layout()
+    plt.show()
+  </code></pre>
+</div>
+<div class="code-box">
+  <pre><code>
+    <img src="D:\psd\Web-PSD-Notebook\PSD\_images\EDA.JPG" alt="explorasi data">
+  </code></pre>
+</div>
+
+<h1 id="Prepocessing">Prepocessing</h1>
+<h2 id="Menentukan Outlier">Menentukan Outlier</h2>
+<p>menentukan outlier dan menghapus outlier</p>
+<div class="code-box">
+  <pre><code>
+    # Deteksi outlier menggunakan IQR
+    for kolom in kolom_numerik:
+    Q1 = df[kolom].quantile(0.25)
+    Q3 = df[kolom].quantile(0.75)
+    IQR = Q3 - Q1
+    batas_bawah = Q1 - 1.5 * IQR
+    batas_atas = Q3 + 1.5 * IQR
+
+    outliers = df[(df[kolom] < batas_bawah) | (df[kolom] > batas_atas)]
+    print(f"Kolom: {kolom}")
+    print(f"Batas bawah: {batas_bawah}, Batas atas: {batas_atas}")
+    print(f"Jumlah outlier: {len(outliers)}\n")
+
+    # Menghapus outlier
+    for kolom in kolom_numerik:
+    Q1 = df[kolom].quantile(0.25)
+    Q3 = df[kolom].quantile(0.75)
+    IQR = Q3 - Q1
+    batas_bawah = Q1 - 1.5 * IQR
+    batas_atas = Q3 + 1.5 * IQR
+
+    df = df[(df[kolom] >= batas_bawah) & (df[kolom] <= batas_atas)]
+  </code></pre>
+</div>
+<div class="code-box">
+  <pre><code>
+    Kolom: AveragePrice
+    Batas bawah: 0.26000000000000034, Batas atas: 2.4999999999999996
+    Jumlah outlier: 209
+
+    Kolom: Total Volume
+    Batas bawah: -622346.985, Batas atas: 1066147.855
+    Jumlah outlier: 2297
+
+    Kolom: 4046
+    Batas bawah: -164395.12499999997, Batas atas: 276269.39499999996
+    Jumlah outlier: 2518
+
+    Kolom: 4225
+    Batas bawah: -217788.34, Batas atas: 371003.98
+    Jumlah outlier: 2519
+
+    Kolom: 4770
+    Batas bawah: -9365.130000000001, Batas atas: 15608.550000000001
+    Jumlah outlier: 2918
+
+    Kolom: Total Bags
+    Batas bawah: -153453.455, Batas atas: 269325.46499999997
+    Jumlah outlier: 2533
+  </code></pre>
+</div>
+
+<h2 id="Visualisasi">Visualisasi</h2>
+<div class="code-box">
+  <pre><code>
+    # Korelasi antar fitur
+    plt.figure(figsize=(10, 8))
+    sns.heatmap(df[kolom_numerik].corr(), annot=True, cmap='coolwarm')
+    plt.title("Matriks Korelasi")
+    plt.show()
+  </code></pre>
+</div>
+<div class="code-box">
+  <pre><code>
+    <img src="PSD\_images\visualisasi korelasi.png" alt="explorasi data">
+  </code></pre>
+</div>
+
+<h2 id="Pemodelan">Pemodelan</h2>
+<div class="code-box">
+  <pre><code>
+    X = df[['Total Volume', '4046', '4225', '4770', 'Total Bags']]
+    y = df['AveragePrice']
+
+    # Split data
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+  </code></pre>
+</div>
+<div class="code-box">
+  <pre><code>
+    from sklearn.svm import SVR
+    from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+
+    # Inisialisasi model SVR
+    svr_model = SVR(kernel='rbf')  # Kernel default RBF
+    svr_model.fit(X_train, y_train)
+
+    # Prediksi
+    y_pred_svr = svr_model.predict(X_test)
+
+    # Evaluasi
+    print("\nEvaluasi Model SVR:")
+    print(f"MAE: {mean_absolute_error(y_test, y_pred_svr):.4f}")
+    print(f"MSE: {mean_squared_error(y_test, y_pred_svr):.4f}")
+    print(f"R2 Score: {r2_score(y_test, y_pred_svr):.4f}")
+  </code></pre>
+</div>
+<div class="code-box">
+  <pre><code>
+    Evaluasi Model SVR:
+    MAE: 0.2499
+    MSE: 0.1069
+    R2 Score: 0.3344 
+  </code></pre>
+</div>
+<div class="code-box">
+  <pre><code>
+    from sklearn.linear_model import LinearRegression
+
+    # Inisialisasi model Linear Regression
+    lr_model = LinearRegression()
+    lr_model.fit(X_train, y_train)
+
+    # Prediksi
+    y_pred_lr = lr_model.predict(X_test)
+
+    # Evaluasi
+    print("\nEvaluasi Model Linear Regression:")
+    print(f"MAE: {mean_absolute_error(y_test, y_pred_lr):.4f}")
+    print(f"MSE: {mean_squared_error(y_test, y_pred_lr):.4f}")
+    print(f"R2 Score: {r2_score(y_test, y_pred_lr):.4f}")
+  </code></pre>
+</div>
+<div class="code-box">
+  <pre><code>
+    Evaluasi Model Linear Regression:
+    MAE: 0.3147
+    MSE: 0.1537
+    R2 Score: 0.0435
+  </code></pre>
+</div>
+<div class="code-box">
+  <pre><code>
+    from sklearn.ensemble import RandomForestRegressor
+
+    # Inisialisasi model Random Forest
+    rf_model = RandomForestRegressor(n_estimators=100, random_state=42)
+    rf_model.fit(X_train, y_train)
+
+    # Prediksi
+    y_pred_rf = rf_model.predict(X_test)
+
+    # Evaluasi
+    print("\nEvaluasi Model Random Forest:")
+    print(f"MAE: {mean_absolute_error(y_test, y_pred_rf):.4f}")
+    print(f"MSE: {mean_squared_error(y_test, y_pred_rf):.4f}")
+    print(f"R2 Score: {r2_score(y_test, y_pred_rf):.4f}")
+  </code></pre>
+</div>
+<div class="code-box">
+  <pre><code>
+    Evaluasi Model Random Forest:
+    MAE: 0.1383
+    MSE: 0.0382
+    R2 Score: 0.7622
+  </code></pre>
+</div>
+
+<div class="code-box">
+  <pre><code>
+    # Scatter plot actual vs predicted
+    plt.figure(figsize=(8, 6))
+    plt.scatter(y_test, y_pred, alpha=0.5, color='green')
+    plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], color='red')
+    plt.xlabel("Actual")
+    plt.ylabel("Predicted")
+    plt.title("Actual vs Predicted Harga Avocado")
+    plt.show()
+  </code></pre>
+</div>
+<div class="code-box">
+  <pre><code>
+    <img src="PSD\_images\actual vs predicted harga.png" alt="explorasi data">
+  </code></pre>
+</div>
+<h2 id="Implementasi">Implementasi</h2>
+<div class="code-box">
+  <pre><code>
+    # Import library yang dibutuhkan
+    import pandas as pd
+    from sklearn.model_selection import train_test_split
+    from sklearn.tree import DecisionTreeRegressor
+
+    # Membaca dataset
+    df = pd.read_csv('avocado.csv')
+
+    # Menentukan fitur dan target
+    X = df[['Total Volume', '4046', '4225', '4770', 'Total Bags', 'Small Bags', 'Large Bags', 'XLarge Bags']]
+    y = df['AveragePrice']
+
+    # Membagi data menjadi train dan test
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+    # Inisialisasi dan melatih model Decision Tree
+    model = DecisionTreeRegressor(random_state=42)
+    model.fit(X_train, y_train)
+
+    # Input interaktif untuk prediksi harga
+    print("\nMasukkan nilai fitur untuk memprediksi harga buah avocado:")
+    total_volume = float(input("Total Volume (volume total avocado yang terjual): "))
+    plu_4046 = float(input("Jumlah PLU 4046 (avocado jenis 4046): "))
+    plu_4225 = float(input("Jumlah PLU 4225 (avocado jenis 4225): "))
+    plu_4770 = float(input("Jumlah PLU 4770 (avocado jenis 4770): "))
+    total_bags = float(input("Total Bags (jumlah total kemasan bag): "))
+    small_bags = float(input("Small Bags (jumlah kemasan ukuran kecil): "))
+    large_bags = float(input("Large Bags (jumlah kemasan ukuran besar): "))
+    xlarge_bags = float(input("XLarge Bags (jumlah kemasan ukuran ekstra besar): "))
+
+    # Menyusun data input ke dalam format DataFrame
+    data_input = pd.DataFrame({
+        'Total Volume': [total_volume],
+        '4046': [plu_4046],
+        '4225': [plu_4225],
+        '4770': [plu_4770],
+        'Total Bags': [total_bags],
+        'Small Bags': [small_bags],
+        'Large Bags': [large_bags],
+        'XLarge Bags': [xlarge_bags]
+    })
+
+    # Melakukan prediksi harga
+    predicted_price = model.predict(data_input)
+
+    # Menampilkan hasil prediksi
+    print(f"\nPrediksi Harga Rata-rata Buah Avocado: ${predicted_price[0]:.2f}")
+  </code></pre>
+</div>
+
+<div class="code-box">
+  <pre><code>
+    Masukkan nilai fitur untuk memprediksi harga buah avocado:
+    Total Volume (volume total avocado yang terjual): 245.000
+    Jumlah PLU 4046 (avocado jenis 4046): 23
+    Jumlah PLU 4225 (avocado jenis 4225): 21
+    Jumlah PLU 4770 (avocado jenis 4770): 3231
+    Total Bags (jumlah total kemasan bag): 3131
+    Small Bags (jumlah kemasan ukuran kecil): 21
+    Large Bags (jumlah kemasan ukuran besar): 311
+    XLarge Bags (jumlah kemasan ukuran ekstra besar): 31
+
+    Prediksi Harga Rata-rata Buah Avocado: $1.49
+  </code></pre>
+</div>
+
+<h2 id="Kesimpulan">Kesimpulan</h2>
+<div class="code-box">
+  <pre><code>
+    Berdasarkan analisis yang telah dilakukan menggunakan beberapa model prediksi, yaitu Support Vector Regression (SVR), Linear Regression, dan Random Forest, berikut adalah kesimpulan terkait kinerja model dalam memprediksi harga avocado:
+    Metode yang Digunakan:
+    <ul>
+      <li>Support Vector Regression (SVR) digunakan untuk menangani masalah regresi non-linear, di mana harga avocado diprediksi berdasarkan berbagai fitur penjualan seperti total volume, jenis kemasan, dan volume masing-masing jenis PLU avocado. SVR memiliki performa yang lebih baik dibandingkan dengan Linear Regression, tetapi masih belum optimal.</li>
+      <li>Linear Regression digunakan sebagai model dasar yang mengasumsikan adanya hubungan linier antara fitur dan target. Namun, hasil R2 Score yang sangat rendah menunjukkan bahwa model ini tidak dapat menangkap hubungan yang lebih kompleks dalam data.</li>
+      <li>Random Forest digunakan karena kemampuannya untuk menangani data yang lebih kompleks dan non-linear dengan lebih baik. Ini adalah model ensemble yang menggabungkan beberapa pohon keputusan (decision trees) untuk meningkatkan akurasi dan stabilitas prediksi.</li>  
+    </ul>
+  </code></pre>
+</div>
+
+<h2 id="Evaluasi Model">Evaluasi Model</h2>
+<div class="code-box">
+  <pre><code>
+    <ul>
+      <li>Random Forest menunjukkan hasil yang paling baik di antara model-model lainnya, dengan R2 Score sebesar 0.7622, yang menunjukkan bahwa model ini dapat menjelaskan sekitar 76% dari variasi harga avocado. Selain itu, MAE dan MSE yang lebih rendah menunjukkan bahwa model ini memiliki kesalahan prediksi yang lebih kecil dan lebih akurat.</li>
+      <li>SVR memberikan R2 Score yang lebih tinggi daripada Linear Regression (0.3344), namun performanya masih belum mencapai Random Forest. SVR lebih unggul dalam memprediksi harga dengan kesalahan yang lebih kecil, tetapi tidak seakurat Random Forest</li>
+      <li>Linear Regression memberikan hasil yang paling buruk, dengan R2 Score hanya 0.0435, menunjukkan bahwa model ini tidak cocok untuk menangani data yang memiliki hubungan non-linear.</li>  
+    </ul>
+  </code></pre>
+</div>
+<p>Dengan demikian, Random Forest adalah pilihan terbaik untuk memprediksi harga avocado berdasarkan data yang ada. Keakuratan model ini membuatnya sangat berguna dalam memberikan estimasi harga yang lebih transparan dan dapat diandalkan untuk pasar avocado.</p>
+
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Tugas2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Tugas 2</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
